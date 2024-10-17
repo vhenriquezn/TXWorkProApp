@@ -27,6 +27,8 @@ interface FirestoreRepository {
     suspend fun toggleStatusActivity(activityId: String, status: String): Resource<Boolean>
     suspend fun addInstrumentToActivity(instrumentId: String, activityId: String?): Resource<Boolean>
     suspend fun deleteInstrumentToActivity(instrumentId: String, activityId: String?): Resource<Boolean>
+    suspend fun deleteUserToActivity(userId: String, activityId: String): Resource<Boolean>
+    suspend fun addUserToActivity(userId: String, activityId: String): Resource<Boolean>
     /////INSTRUMENTS////////////////////////////////////////////////////
     suspend fun getInstrumentsFlow(companyId: String,activityId: String? = null, businessId: String? = null): Flow<Resource<List<InstrumentEntity>>>
     suspend fun saveInstrument(instrument: Map<String,Any>)
@@ -71,5 +73,6 @@ interface FirestoreRepository {
     ////INVITATIONS/////////////////////////////////////////////////////
     suspend fun getInvitationsFlow(userId: String): Flow<Resource<List<Map<String, Any>>?>>
     suspend fun aceptInvitation(user: Map<String, Any?>, accept: Boolean, userId: String, invitation: Map<String, Any>)
+
 
 }

@@ -7,11 +7,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -24,7 +22,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.vhenriquez.txwork.R
-import com.vhenriquez.txwork.common.composable.DropdownContextMenu
 import com.vhenriquez.txwork.common.composable.PopUpMenu
 import com.vhenriquez.txwork.common.composable.TextSpannable
 import com.vhenriquez.txwork.model.ActivityEntity
@@ -36,7 +33,7 @@ fun ActivityItem(
     onActionClick: (Int) -> Unit,
     onClick: () -> Unit) {
     var isExpandedMenu by remember { mutableStateOf(false) }
-    val options = listOf("Editar","Eliminar","Usuarios","Reports", if (activity.status == "open") "Cerrar Actividad" else "Abrir Actividad","Cancelar")
+    val options = listOf("Editar","Eliminar", if (activity.status == "open") "Cerrar Actividad" else "Abrir Actividad","Cancelar")
     Card(
         modifier = Modifier
             .fillMaxWidth()

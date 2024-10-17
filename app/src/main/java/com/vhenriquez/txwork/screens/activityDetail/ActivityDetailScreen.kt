@@ -175,7 +175,10 @@ fun ContentActivityDetailScreen(
                         expanded = uiState.showOptionsMenu,
                         onDismissRequest = {viewModel.uiState.value = uiState.copy(showOptionsMenu = false)}) {
                         DropdownMenuItem(
-                            onClick = {openScreen(Main.AddUsersToActivity(activityId = selectedActivity.id, companyAppId))},//addUsers
+                            onClick = {
+                                viewModel.uiState.value = uiState.copy(showOptionsMenu = false)
+                                openScreen(Main.AddUsersToActivity(activityId = selectedActivity.id, companyAppId))
+                                      },//addUsers
                             text = {
                                 Row {
                                     Icon(imageVector = Icons.Filled.People, contentDescription = "users")

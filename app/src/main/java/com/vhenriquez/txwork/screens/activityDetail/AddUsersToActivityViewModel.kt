@@ -4,8 +4,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import com.vhenriquez.txwork.TXWorkViewModel
+import com.vhenriquez.txwork.model.ActivityEntity
 import com.vhenriquez.txwork.model.repository.FirestoreRepository
 import com.vhenriquez.txwork.model.InstrumentEntity
+import com.vhenriquez.txwork.model.UserEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
@@ -34,12 +36,14 @@ class AddUsersToActivityViewModel @Inject constructor(
     private val _searchText = MutableStateFlow("")
     val searchText = _searchText.asStateFlow()
 
-    private val _instruments = MutableStateFlow(listOf<InstrumentEntity>())
+    private val _activitySelected = MutableStateFlow(ActivityEntity())
+    val activitySelected = _activitySelected.asStateFlow()
 
-    val instruments = flowOf(companyAppIdSelected.value)
+    private val _users = MutableStateFlow(listOf<UserEntity>())
+
+    val users = flowOf(companyAppIdSelected.value)
         .flatMapLatest { id ->
-            repository.getInstrumentsFlow(
-                businessId = businessId,
+            repository.getUsersFlow(
                 companyId = id)
         }
         .combine(searchText.debounce(1000L)) { instruments, text ->
@@ -52,20 +56,45 @@ class AddUsersToActivityViewModel @Inject constructor(
         .stateIn(
             viewModelScope,
             SharingStarted.WhileSubscribed(5000),
-            _instruments.value
+            _users.value
         )
+
+    init {
+        launchCatching {
+            repository.getActivitySelected(activityId).apply {
+                _activitySelected.value = this!!
+            }
+        }
+    }
 
     fun onSearchTextChange(text: String) {
         _searchText.value = text
     }
 
-    fun addInstrumentToActivity(instrument: InstrumentEntity) {
-        val exist = instrument.activities.contains(activityId)
+    fun addUserToActivity(user: UserEntity, exist: Boolean) {
         launchCatching {
             if (exist)
-                repository.deleteInstrumentToActivity(instrument.id, activityId)
+                activityId?.let {
+                    repository.deleteUserToActivity(user.id, it).apply {
+                        if (this.data == true) {
+                            val usersActivity = activitySelected.value.users.toMutableList().apply {
+                                remove(user.id)
+                            }
+                            _activitySelected.value = activitySelected.value.copy(users = usersActivity)
+                        }
+                    }
+                }
             else
-                repository.addInstrumentToActivity(instrument.id, activityId)
+                activityId?.let {
+                    repository.addUserToActivity(user.id, it).apply {
+                        if (this.data == true) {
+                            val usersActivity = activitySelected.value.users.toMutableList().apply {
+                                add(user.id)
+                            }
+                            _activitySelected.value = activitySelected.value.copy(users = usersActivity)
+                        }
+                    }
+                }
         }
     }
 }

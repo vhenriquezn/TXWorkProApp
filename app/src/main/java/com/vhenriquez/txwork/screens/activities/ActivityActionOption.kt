@@ -3,8 +3,6 @@ package com.vhenriquez.txwork.screens.activities
 enum class ActivityActionOption(val title: String) {
     EditActivity("Editar actividad"),
     DeleteActivity("Eliminar actividad"),
-    UsersInActivity("Usuarios"),
-    //ReportsInActivity("Reportes"),
     ToggleStatusActivity("Cerrar actividad"),
     Cancel("Cancelar");
 

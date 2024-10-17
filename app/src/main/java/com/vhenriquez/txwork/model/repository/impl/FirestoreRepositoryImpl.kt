@@ -197,6 +197,24 @@ class FirestoreRepositoryImpl @Inject constructor(
         }
     }
 
+    override suspend fun addUserToActivity(userId: String, activityId: String): Resource<Boolean> {
+        return try {
+            activitiesCollection.document(activityId).update(mapOf(ActivityEntity.USERS to FieldValue.arrayUnion(userId))).await()
+            Resource.Success(true)
+        }catch (e: Exception){
+            Resource.Error(e.message.toString())
+        }
+    }
+
+    override suspend fun deleteUserToActivity(userId: String, activityId: String): Resource<Boolean> {
+        return try {
+            activitiesCollection.document(activityId).update(mapOf(ActivityEntity.USERS to FieldValue.arrayRemove(userId))).await()
+            Resource.Success(true)
+        }catch (e: Exception){
+            Resource.Error(e.message.toString())
+        }
+    }
+
     override suspend fun getInstrumentSelected(instrumentId: String): InstrumentEntity? =
         instrumentsCollection.document(instrumentId).get().await()
             .toObject(InstrumentEntity::class.java)?.apply {

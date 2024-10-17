@@ -27,7 +27,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.vhenriquez.txwork.R
 import com.vhenriquez.txwork.common.composable.PopupBox
 import com.vhenriquez.txwork.common.composable.SearchTextField
+import com.vhenriquez.txwork.model.ActivityEntity
 import com.vhenriquez.txwork.model.InstrumentEntity
+import com.vhenriquez.txwork.model.UserEntity
 import com.vhenriquez.txwork.navigation.Main
 
 @Composable
@@ -36,29 +38,30 @@ fun AddUsersToActivityScreen(
     openScreen: (Any) -> Unit,
     viewModel: AddUsersToActivityViewModel = hiltViewModel()){
 
-    val activityId = viewModel.activityId
-    val companyAppIdSelected = viewModel.companyAppIdSelected
-    val instruments by viewModel.instruments.collectAsState()
+    val activity = viewModel.activitySelected.collectAsState()
+    val users by viewModel.users.collectAsState()
     val searchText by viewModel.searchText.collectAsState()
 
     AddUsersToActivityScreenContent(
-        instruments = instruments,
-        activityId = activityId?: "",
+        users = users,
+        activity = activity.value,
         onDismiss = {popUp()},
         searchText = searchText,
         onSearchTextChange = viewModel::onSearchTextChange,
-        onFabClick = {openScreen(Main.EditInstrument(
-            activityId = activityId,
-            companyAppId = companyAppIdSelected.value))},
-        onAddClick = { viewModel.addInstrumentToActivity(it) },
+        onFabClick = {
+//            openScreen(Main.EditInstrument(
+//            activityId = activityId,
+//            companyAppId = companyAppIdSelected.value))
+                     },
+        onAddClick = viewModel::addUserToActivity,
     )
 }
 
 @Composable
 fun AddUsersToActivityScreenContent(
-    instruments: List<InstrumentEntity>,
-    activityId: String,
-    onAddClick: (instrument:InstrumentEntity) -> Unit,
+    users: List<UserEntity>,
+    activity: ActivityEntity,
+    onAddClick: (UserEntity, Boolean) -> Unit,
     searchText: String,
     onSearchTextChange: (String) -> Unit,
     onFabClick: () -> Unit,
@@ -79,12 +82,11 @@ fun AddUsersToActivityScreenContent(
             item {
                 SearchTextField(searchText, onSearchTextChange)
             }
-            items(instruments, key = { it.id }) { instrument ->
+            items(users, key = { it.id }) { user ->
                 AddUserItem(
-                    instrument = instrument,
-                    activityId = activityId,
-                    onAddClick = {onAddClick(instrument)},
-                )
+                    user = user,
+                    activity = activity,
+                    onAddClick = onAddClick)
             }
         }
     }
@@ -92,11 +94,11 @@ fun AddUsersToActivityScreenContent(
 
 @Composable
 fun AddUserItem(
-    instrument: InstrumentEntity,
-    activityId: String,
-    onAddClick: () -> Unit,
+    user: UserEntity,
+    activity: ActivityEntity,
+    onAddClick: (UserEntity, Boolean) -> Unit,
 ) {
-    val status = instrument.activities.contains(activityId)
+    val status = activity.users.contains(user.id)
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -115,20 +117,20 @@ fun AddUserItem(
                     .weight(0.6f)
             ) {
                 Text(
-                    text = instrument.tag,
+                    text = user.userName,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,)
 
                 Text(
-                    text = instrument.area,
+                    text = user.email?:"",
                     style = MaterialTheme.typography.titleSmall,
                     maxLines = 1,)
             }
 
             Button(
                 modifier = Modifier.weight(0.4f),
-                onClick =  onAddClick){
+                onClick =  {onAddClick(user, status)}){
                 Text(text = if (status) stringResource(R.string.btn_txt_remove) else stringResource(R.string.btn_txt_add) )
             }
         }

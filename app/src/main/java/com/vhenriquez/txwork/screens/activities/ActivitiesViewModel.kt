@@ -114,16 +114,10 @@ class ActivitiesViewModel @Inject constructor(
             1 -> {//Eliminar
                 uiState.value = uiState.value.copy(showDeleteActivityDialog = true)
             }
-            2 -> {//Usuarios
-                uiState.value = uiState.value.copy(selectedActivity = null)
-            }
-            3 -> {//Reportes
-                uiState.value = uiState.value.copy(selectedActivity = null)
-            }
-            4 -> {//Cerrar Actividad
+            2 -> {//Cerrar Actividad
                 toggleStatusActivity()
                 }
-            5 -> {//Cancelar
+            3 -> {//Cancelar
                 uiState.value = uiState.value.copy(selectedActivity = null)
             }
         }
