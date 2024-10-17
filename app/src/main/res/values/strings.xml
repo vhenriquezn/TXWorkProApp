@@ -1,0 +1,214 @@
+<resources>
+
+    <string name="generic_error">Something wrong happened. Please try again.</string>
+    <string name="email_error">Please insert a valid email.</string>
+
+    <!-- LoginScreen -->
+    <string name="sign_in">Sign in</string>
+    <string name="login_details">Enter your login details</string>
+    <string name="forgot_password">Forgot password? Click to get recovery email</string>
+    <string name="recovery_email_sent">Check your inbox for the recovery email.</string>
+    <string name="empty_password_error">Password cannot be empty.</string>
+
+    <!-- SignUpScreen -->
+    <string name="create_account">Create account</string>
+    <string name="password_error">Your password should have at least six digits and include one digit, one lower case letter and one upper case letter.</string>
+    <string name="password_match_error">Passwords do not match.</string>
+
+
+    <string name="app_name">TX Work Pro</string>
+    <string name="default_web_client_id">fcm_default_channel</string>
+    <string name="resetPassMessage">Recibe un correro electronico con instrucciones para cambiar la contraseña</string>
+    <string name="home">home</string>
+    <string name="settings">settings</string>
+    <string name="card_business">Empresa:</string>
+    <string name="card_date">Fecha: </string>
+    <string name="card_serviceOrder">OC: </string>
+    <string name="card_workOrder">OT: </string>
+    <string name="card_author">Creado por: </string>
+    <string name="card_instrumentType">Tipo:</string>
+    <string name="card_instrumentMagnitude">Magnitud:</string>
+    <string name="card_instrumentVerification">Rango verificación:</string>
+    <string name="card_instrumentBusiness">Empresa:</string>
+    <string name="card_instrumentArea">Área:</string>
+
+
+    <string name="drawer_activities">Actividades</string>
+    <string name="drawer_instruments">Instrumentos</string>
+    <string name="drawer_users">Usuarios</string>
+    <string name="drawer_business">Empresas</string>
+    <string name="drawer_patterns">Patrones</string>
+    <string name="drawer_certificates">Certificados</string>
+    <string name="drawer_calculatorPV">Calculadora PV</string>
+    <string name="drawer_calculatorDP">Calculadora DP</string>
+    <string name="drawerTitlePatterns">Instrumentos Patrones</string>
+    <string name="drawerTitleTools">Herramientas</string>
+    <string name="card_patternBrand">Marca:</string>
+    <string name="card_patternSerial">Serial:</string>
+    <string name="title_add_instrument">Nuevo Instrumento</string>
+    <string name="add_activity_dialog_name">Nombre Actividad</string>
+    <string name="add_activity_dialog_date">Fecha</string>
+    <string name="add_activity_dialog_business">Empresa</string>
+    <string name="delete_activity_dialog_title">Eliminar Actividad</string>
+    <string name="delete_activity_dialog_msg">¿Estás seguro que deseas eliminar la actividad?</string>
+    <string name="delete_certificate_dialog_title">Eliminar Certificado</string>
+    <string name="delete_certificate_dialog_msg">¿Estás seguro que deseas eliminar el certificado?</string>
+    <string name="delete_pattern_dialog_title">Eliminar Patron</string>
+    <string name="delete_pattern_dialog_msg">¿Estás seguro que deseas eliminar el patron?</string>
+
+
+    <string name="no_activities">"No se encontraron \n Actividades"</string>
+    <string name="no_instruments">"No se encontraron \n instrumentos"</string>
+    <string name="add_activity_dialog_title">Agregar Actividad</string>
+    <string name="add_instrument_dialog_business">Empresa</string>
+    <string name="add_instrument_dialog_description">Descripcion</string>
+    <string name="add_instrument_dialog_area">Area</string>
+    <string name="add_instrument_dialog_instrumentType">Tipo instrumento</string>
+    <string name="add_instrument_dialog_magnitude">Magnitud</string>
+    <string name="add_instrument_dialog_reportType">Tipo reporte</string>
+    <string name="add_instrument_dialog_verificationUnit">Unidad Verificación</string>
+    <string name="add_instrument_dialog_setRange">Rango Verificación</string>
+    <string name="info_brand">Marca: </string>
+    <string name="info_model">Modelo: </string>
+    <string name="info_serial">Serial: </string>
+    <string name="info_damping">Damping: </string>
+    <string name="info_instrument_range">Rango Instrumento: </string>
+    <string name="info_verification_range_pv">Rango Verificación PV: </string>
+    <string name="info_verification_range_sv">Rango Verificación SV: </string>
+    <string name="info_verification_range_tv">Rango Verificación TV: </string>
+    <string name="info_verification_range_qv">Rango Verificación QV: </string>
+    <string name="info_output">Salida: </string>
+    <string name="info_sensor_type">Tipo sensor: </string>
+    <string name="title_tab_information">Información</string>
+    <string name="title_tab_calibration">Calibración</string>
+    <string name="observations_dialog_title">Observaciones</string>
+
+    <string name="delete_instrument_dialog_title">Eliminar Instrumento</string>
+    <string name="delete_instrument_dialog_msg">¿Estás seguro que deseas eliminar el instrumento?</string>
+    <string name="info_diameter">Diámetro caratula:</string>
+    <string name="info_resolution">Resolución:</string>
+    <string name="info_process_connection">Conexión a proceso:</string>
+    <string name="info_sensor_diameter">Diametro sensor</string>
+    <string name="info_useful_length">Largo útil:</string>
+    <string name="info_title">Información Transmisor</string>
+    <string name="info_observations_title">Observaciones Transmisor</string>
+    <string name="no_instrument_selected">Seleccione un instrumento</string>
+    <string name="calibration_title_patterns">PATRONES</string>
+    <string name="calibration_title_service">SERVICIO / CALIBRACION</string>
+    <string name="calibration_title_calibration">CALIBRACIÓN</string>
+
+    <string name="info_observations_calibration_title">OBSERVACIONES CALIBRACION</string>
+
+
+    <string name="addInstrument_text_rbThermometer">Termómetro</string>
+    <string name="addInstrument_text_rbManometer">Manómetro</string>
+    <string name="addInstrument_text_rbSensor">Sensor</string>
+    <string name="addInstrument_text_rbTemperature">Temperatura</string>
+    <string name="text_splash">Preparando todo...</string>
+    <string name="card_company_website">Sitio Web:</string>
+    <string name="card_company_address">Dirección:</string>
+    <string name="card_certificateLaboratory">Laboratorio:</string>
+    <string name="card_certificateDate">Certificado el:</string>
+    <string name="card_certificateId">N° Certificado:</string>
+    <string name="add_certificate_dialog_title">Nuevo Certificado</string>
+    <string name="add_certificate_dialog_name">Nombre certificado</string>
+    <string name="add_certificate_dialog_family">Familia</string>
+    <string name="add_certificate_dialog_certificate_id">N° Certificado</string>
+    <string name="add_certificate_dialog_laboratory">Laboratorio</string>
+    <string name="add_certificate_dialog_broadcast_date">Fecha emision</string>
+    <string name="icn_camera_view_switch_camera_content_description">swCamera</string>
+    <string name="icn_camera_view_camera_shutter_content_description">shutterCamera</string>
+    <string name="icn_camera_view_view_gallery_content_description">gallery</string>
+    <string name="login_error">Error al iniciar sesion</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="signup_title">Crear Cuenta</string>
+    <string name="forgot_password_title">Recuperar Contraseña</string>
+    <string name="dialog_service_title">Seleccione Tipo de Servicio</string>
+    <string name="dialog_calibrationType_title">Seleccione tipo calibración</string>
+    <string name="btn_txt_remove">Quitar</string>
+    <string name="btn_txt_add">Agregar</string>
+
+    <string name="add_pattern_dialog_name">Nombre</string>
+    <string name="add_pattern_dialog_brand">Marca</string>
+    <string name="add_pattern_dialog_title">Agregar Patron</string>
+    <string name="add_pattern_dialog_serial">Serial</string>
+    <string name="add_pattern_dialog_certificate">Certificado</string>
+    <string name="add_certificate_dialog_date">Fecha emisión</string>
+    <string name="no_certificates">No se encontraron Certificados</string>
+    <string name="edit_certificate_dialog_title">Editar Certificado</string>
+    <string name="edit_activity_dialog_title">Editar Actividad</string>
+    <string name="edit_instrument_dialog_title">Editar Instrumento</string>
+    <string name="edit_pattern_dialog_title">Editar Patron</string>
+    <string name="icn_camera_view_view_crop_content_description">crop</string>
+    <string name="icn_camera_view_view_close_content_description">close</string>
+    <string name="icn_camera_view_view_confirm_content_description">confirm</string>
+    <string name="certificate_dialog_selectCertificate">Seleccionar Certificado</string>
+    <string name="add_company_dialog_title">Agregar Empresa</string>
+    <string name="edit_company_dialog_title">Editar Empresa</string>
+    <string name="add_company_dialog_name">Nombre</string>
+    <string name="add_company_dialog_website">Sitio Web</string>
+    <string name="add_company_dialog_address">Dirección</string>
+    <string name="add_company_dialog_logo">Logo</string>
+    <string name="delete_company_dialog_title">¿Eliminar Compañia?</string>
+    <string name="delete_company_dialog_msg">¿Estas seguro que deseas eliminar compañia?</string>
+    <string name="no_companies">No se encontaron empresas</string>
+    <string name="no_peoples">No se encontraron usuarios</string>
+    <string name="add_instruments_dialog_title">Añadir instruementos</string>
+    <string name="drawer_addBussines">Añadir nueva empresa</string>
+    <string name="exitApp">Salir</string>
+    <string name="settings_app">Ajustes de App</string>
+    <string name="other_business">Otra</string>
+    <string name="add_user_dialog_title">Nuevo Usuario</string>
+    <string name="edit_user_dialog_title">Editar Usuario</string>
+    <string name="add_user_dialog_name">Nombre Usuario</string>
+    <string name="add_user_dialog_email">Email usuario</string>
+    <string name="add_user_permissions_title">Permisos</string>
+    <string name="add_user_dialog_userType">Tipo usuario</string>
+    <string name="notifications_dialog_title">Notificaciones</string>
+    <string name="add_certificate_dialog_new_family">Nueva Familia</string>
+    <string name="add_certificate_dialog_new_verificationUnit">Unidad de verificación</string>
+
+    <!-- Strings related to edit Instrument info -->
+    <string name="dialog_edit_info_title">Editar Información</string>
+    <string name="dialog_edit_info_title_transmitter_dates">DATOS TRANSMISOR</string>
+    <string name="dialog_edit_info_title_range">RANGO EQUIPO</string>
+    <string name="dialog_edit_info_title_verification_pv">RANGO VERIFICACIÓN PV</string>
+    <string name="dialog_edit_info_title_verification_sv">RANGO VERIFICACIÓN SV</string>
+    <string name="dialog_edit_info_title_verification_tv">RANGO VERIFICACIÓN TV</string>
+    <string name="dialog_edit_info_title_verification_qv">RANGO VERIFICACIÓN QV</string>
+    <string name="dialog_edit_info_title_output">SALIDA</string>
+    <string name="dialog_edit_info_title_sensor">SENSOR</string>
+    <string name="dialog_edit_info_title_transmitterInfo">INFORMACION TRANSMISOR</string>
+    <string name="dialog_edit_info_title_sensorInfo">INFORMACION SENSOR</string>
+    <string name="dialog_edit_info_title_sensor_dates">DATOS SENSOR</string>
+    <string name="dialog_edit_info_brand">Marca</string>
+    <string name="dialog_edit_info_model">Modelo</string>
+    <string name="dialog_edit_info_serial">Serial</string>
+    <string name="dialog_edit_info_damping">Damping</string>
+    <string name="dialog_edit_info_unit">Unidad</string>
+    <string name="dialog_edit_info_output">Salida</string>
+    <string name="dialog_edit_info_sensor_type">Tipo de sensor</string>
+
+    <!-- Strings related to edit instrument calibration -->
+    <string name="dialog_edit_calibration_title">Calibración Equipo</string>
+    <string name="dialog_edit_calibration_txt_range_switch">"Valor Seteado:"</string>
+    <string name="dialog_edit_calibration_txt_range_transmitter">"Rango Verificación:"</string>
+    <string name="dialog_edit_calibration_title_found_value">"Condición\nencontrada"</string>
+    <string name="dialog_edit_calibration_title_left_value">"Condición\nDejada"</string>
+    <string name="dialog_edit_calibration_label_pattern">Patrón</string>
+    <string name="dialog_edit_calibration_label_found_value">Lectura</string>
+    <string name="dialog_edit_calibration_label_reposition_value">Reposición</string>
+    <string name="dialog_edit_calibration_txt_autoComplete">Llenar valores dejados</string>
+    <string name="dialog_edit_calibration_title_drive">Accionamiento</string>
+    <string name="dialog_edit_calibration_label_rb_down">Bajada</string>
+    <string name="dialog_edit_calibration_label_rb_up">Subida</string>
+    <string name="dialog_edit_calibration_title_electrical_contact">Contácto eléctrico</string>
+    <string name="dialog_edit_calibration_label_item">Item</string>
+    <string name="dialog_edit_calibration_label_before">Antes</string>
+    <string name="dialog_edit_calibration_label_after">Despues</string>
+    <string name="dialog_edit_calibration_label_status">Estado</string>
+
+
+    <string name="dialog_add_users_to_activity_title">Usuarios</string>
+
+</resources>

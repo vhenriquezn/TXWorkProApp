@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "692175499969",
+    "project_id": "tx-work-pro",
+    "storage_bucket": "tx-work-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692175499969:android:b70fad1bd3a843ac79da40",
+        "android_client_info": {
+          "package_name": "com.vhenriquez.txWorkPro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692175499969-ju15msod0ck3i9qaf31gua51ebdostmq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vhenriquez.txWorkPro",
+            "certificate_hash": "5c429da6f351cdc037dcbe15923c7566721c1c58"
+          }
+        },
+        {
+          "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9FtY60ni_2rlZxh_NYTSbzyux2luQie0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692175499969:android:24b0630c22cf457579da40",
+        "android_client_info": {
+          "package_name": "com.vhenriquez.txwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9FtY60ni_2rlZxh_NYTSbzyux2luQie0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692175499969:android:a8d4c1bc6a74d56879da40",
+        "android_client_info": {
+          "package_name": "com.vhenriquez.txworkpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692175499969-0g378hpl5f6a5pi0ciepn3in6uscr4cn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vhenriquez.txworkpro",
+            "certificate_hash": "5c429da6f351cdc037dcbe15923c7566721c1c58"
+          }
+        },
+        {
+          "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9FtY60ni_2rlZxh_NYTSbzyux2luQie0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692175499969-k2srr6tt1qu2ensh3ged0he9b21fuamg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

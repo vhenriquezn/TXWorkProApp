@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transmitterOutput">
+        <item>NO APLICA</item>
+        <item>LINEAL 4&#727;20 mA HART</item>
+        <item>LINEAL 4&#727;20 mA</item>
+        <item>CUADRÁTICO 4&#727;20 mA</item>
+        <item>FIELDBUS</item>
+        <item>PROFIBUS</item>
+        <item>MODBUS</item>
+        <item>LINEAL 0&#727;20 mA</item>
+        <item>LINEAL 0&#727;10 VDC</item>
+        <item>LINEAL 0&#727;5 VDC</item>
+        <item>TRANSISTORIZADA</item>
+        <item>NEUMATICO 3&#727;15 PSI</item>
+        <item>TIPO PNP</item>
+        <item>CONTACTO</item>
+        <item>ANALOGA</item>
+        <item>RESISTENCIA</item>
+        <item>VOLTAJE</item>
+    </string-array>
+
+    <string-array name="report_type_options">
+        <item>5 puntos directos</item>
+        <item>5 puntos 4–20 mA lineal</item>
+        <item>5 puntos 4–20 mA cuadratico</item>
+        <item>3 puntos directos</item>
+        <item>3 puntos 4–20 mA lineal</item>
+        <item>Switch</item>
+        <item>ZR</item>
+        <item>Mantención</item>
+    </string-array>
+
+    <string-array name="magnitude_options">
+        <item>No aplica</item>
+        <item>Temperatura</item>
+        <item>Presión</item>
+        <item>Flujo</item>
+        <item>Flujo Multivariable</item>
+        <item>Conductividad</item>
+        <item>Nivel</item>
+        <item>PH</item>
+        <item>Oxigeno</item>
+        <item>Humedad</item>
+        <item>Densidad</item>
+        <item>ClO2</item>
+        <item>Multigases</item>
+        <item>Turbidez</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="instrument_type_options">
+        <item>Transmisor</item>
+        <item>Switch</item>
+        <item>Sensor</item>
+        <item>Manómetro</item>
+        <item>Termómetro</item>
+        <item>Detector gases</item>
+        <item>Portatil</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="analytics_unit_options">
+        <item>ph</item>
+        <item>uS/cm</item>
+        <item>%O2</item>
+        <item>ppm</item>
+        <item>ppb</item>
+        <item>mg/l</item>
+        <item>%RH</item>
+        <item>NTU</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="flow_unit_options">
+        <item>m3/h</item>
+        <item>mmH20</item>
+        <item>inH2O</item>
+        <item>kpa</item>
+        <item>mBar</item>
+        <item>mm</item>
+        <item>t/h</item>
+        <item>kg/h</item>
+        <item>kg/min</item>
+        <item>l/min</item>
+        <item>l/s</item>
+        <item>m</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="level_unit_options">
+        <item>mmH20</item>
+        <item>mmHg</item>
+        <item>Kpa</item>
+        <item>inH2O</item>
+        <item>mBar</item>
+        <item>Pa</item>
+        <item>Bar</item>
+        <item>Kg/cm2</item>
+        <item>lb/ft2</item>
+        <item>MPa</item>
+        <item>PSI</item>
+        <item>cm</item>
+        <item>mm</item>
+        <item>m</item>
+        <item>%</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="temperature_unit_options">
+        <item>°C</item>
+        <item>°K</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="pressure_unit_options">
+        <item>Bar(g)</item>
+        <item>Bar(abs)</item>
+        <item>mBar</item>
+        <item>PSI</item>
+        <item>Kg/cm2</item>
+        <item>Pa</item>
+        <item>Kpa</item>
+        <item>MPa</item>
+        <item>lb/ft2</item>
+        <item>mmH20</item>
+        <item>inH2O</item>
+        <item>mmHg</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="sensorTypeTemperature">
+        <item>TIPO K</item>
+        <item>TIPO J</item>
+        <item>TIPO L</item>
+        <item>TIPO N</item>
+        <item>TIPO R</item>
+        <item>TIPO S</item>
+        <item>TIPO T</item>
+        <item>TIPO U</item>
+        <item>TIPO RTD</item>
+        <item>TIPO RTD 2W</item>
+        <item>TIPO RTD 3W</item>
+        <item>TIPO RTD 4W</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="sensorTypePressure">
+        <item>BAROMETRICA</item>
+        <item>ABSOLUTA</item>
+        <item>DIFERENCIAL</item>
+        <item>MANOMETRICA</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="sensorTypeLevel">
+        <item>BAROMETRICA</item>
+        <item>ABSOLUTA</item>
+        <item>DIFERENCIAL</item>
+        <item>MANOMETRICA</item>
+        <item>RADAR</item>
+        <item>RADAR GUIADO</item>
+        <item>CAPACITIVO</item>
+        <item>LASER</item>
+        <item>ULTRASONICO</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="sensorTypeFlow">
+        <item>MAGNETICO</item>
+        <item>CORIOLIS</item>
+        <item>MULTIVARIABLE</item>
+        <item>DIFERENCIAL</item>
+        <item>ULTRASONICO</item>
+        <item>VORTEX</item>
+        <item>ANUBAR</item>
+        <item>PITOT</item>
+        <item>PLACA ORIFICIO</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="sensorTypeAnalytics">
+        <item>SONDA PH</item>
+        <item>TOROIDE</item>
+        <item>SONDA CONDUCTIVIDAD</item>
+        <item>SONDA OXIGENO</item>
+        <item>CELDA ZIRCONIO</item>
+        <item>MULTIVARIABLE</item>
+        <item>CELDA CLO2</item>
+        <item>CELDA MULTIGAS</item>
+        <item>DIFERENCIAL</item>
+        <item>SENSOR NEFELOMETRICO</item>
+        <item>SONDA RH</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="service">
+        <item>VERIFICACION TERRENO</item>
+        <item>VERIFICACION LABORATORIO</item>
+    </string-array>
+
+    <string-array name="calibrationType">
+        <item>VERIFICACION Y CORRECCION</item>
+        <item>VERIFICACION </item>
+    </string-array>
+
+    <string-array name="header1_switch">
+        <item>Rango Setting</item>
+        <item>Bajada/Subida</item>
+        <item>Contacto </item>
+    </string-array>
+
+    <string-array name="header2_switch">
+        <item>Condiciones\nEncontradas</item>
+        <item>Condiciones\nDejadas</item>
+    </string-array>
+
+    <string-array name="header3_switch">
+        <item>Lectura</item>
+        <item>Reposición</item>
+        <item>Lectura</item>
+        <item>Reposición</item>
+    </string-array>
+
+    <string-array name="header_transmitter">
+        <item>Patron \n [%s]</item>
+        <item>Valor \n encontrado</item>
+        <item>Valor \n Dejado </item>
+        <item>Error % </item>
+    </string-array>
+
+    <string-array name="colZR">
+        <item>Zero Gas Calibración</item>
+        <item>Span Gas Calibración</item>
+        <item>Tiempo Respuesta</item>
+        <item>Cell Rob Life</item>
+        <item>Cell Temperature</item>
+        <item>CJ Temperature</item>
+        <item>Cell Voltage</item>
+        <item>Thermo Voltage</item>
+        <item>CJ Resistance</item>
+        <item>Cell Resistance</item>
+        <item>Fecha Calibracion Anterior</item>
+    </string-array>
+
+    <string-array name="user_type_options">
+        <item>Instrumentista</item>
+        <item>Tecnico</item>
+        <item>Administrador</item>
+
+    </string-array>
+
+</resources>

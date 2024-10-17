@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="spacer_padding">5dp</dimen>
+    <dimen name="header_image_size">50dp</dimen>
+    <dimen name="header_padding">10dp</dimen>
+    <dimen name="card_image_size">60dp</dimen>
+    <dimen name="card_image_size_business_drawer">40dp</dimen>
+</resources>
